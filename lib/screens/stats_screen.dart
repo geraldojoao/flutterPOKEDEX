@@ -76,6 +76,7 @@ class StatsScreenState extends State<StatsScreen> {
       return null;
     }
   }
+
   double getAverageWeight() {
     if (pokemons.isEmpty) return 0;
     double totalWeight = 0;
@@ -186,7 +187,6 @@ class StatsScreenState extends State<StatsScreen> {
                   ),
                 ),
                 const SizedBox(height: 16),
-                // Lista dos tipos (legenda)
                 ListView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),

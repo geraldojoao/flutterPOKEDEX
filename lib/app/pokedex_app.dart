@@ -41,11 +41,7 @@ class _PokedexAppState extends State<PokedexApp> {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: Provider.of<ThemeProvider>(context).themeMode,
-      home: SplashScreen(
-        onInitializationComplete: () {
-          // Não navegue aqui! Deixe o SplashScreen cuidar disso.
-        },
-      ),
+      home: SplashScreen(onInitializationComplete: () {}),
       routes: {
         '/main': (context) => DefaultTabController(
           length: 4,

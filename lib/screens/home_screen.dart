@@ -335,6 +335,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         return PokemonCard(
                           pokemonName: name,
                           imageUrl: imageUrl,
+                          speciesUrl: p['url'],
                           isFavorite: isFav,
                           backgroundColor: backgroundColor!,
                           onTap: () async {
@@ -350,7 +351,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               arguments: detail,
                             );
                           },
-                          onToggleFavorite: () => widget.onToggleFavorite(name),
+                          onFavTap: () => widget.onToggleFavorite(name),
                         );
                       } else {
                         return const Center(child: CircularProgressIndicator());
