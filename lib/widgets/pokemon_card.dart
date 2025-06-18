@@ -13,7 +13,7 @@ class PokemonCard extends StatefulWidget {
   final VoidCallback onFavTap;
 
   const PokemonCard({
-    Key? key,
+    super.key,
     required this.pokemonName,
     required this.imageUrl,
     required this.speciesUrl,
@@ -21,7 +21,7 @@ class PokemonCard extends StatefulWidget {
     this.backgroundColor = Colors.white,
     required this.onTap,
     required this.onFavTap,
-  }) : super(key: key);
+  });
 
   @override
   _PokemonCardState createState() => _PokemonCardState();

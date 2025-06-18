@@ -6,12 +6,12 @@ class AboutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('sobre')),
+      appBar: AppBar(title: const Text('Sobre')),
       body: const Center(
         child: Padding(
           padding: EdgeInsets.all(20.0),
           child: Text(
-            'Este é um aplicativo Pokedex simples,feito Por João Geraldo Da S. Neto.',
+            'Este é um aplicativo Pokedex simples, feito por João Geraldo.',
             style: TextStyle(fontSize: 16),
             textAlign: TextAlign.center,
           ),
